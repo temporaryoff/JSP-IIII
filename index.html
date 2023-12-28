@@ -131,7 +131,53 @@
         // getName();  // ans => 1) IMPORTANT: let cha scope ha block level la asto. 2) bahercha global variable ha function chya aat madhe jau shakto. 3)anil yeil karan let name = 'anil' hee function madhe ahe mahanun tyala function madhech scope ahe. mahanun tyala anil yeil.
 
         //24
-        console.log(`${(x => x)('I love')} to program`) // ans => I love to program yeil karan arrow function madhe return keyword nahi mahanun tyala I love yeil.  mahanun I love to program yeil. 
+        // console.log(`${(x => x)('I love')} to program`) // ans => I love to program yeil karan arrow function madhe return keyword nahi ani kontahee error nahi mahanun tyala I love yeil.  mahanun I love to program yeil. 
+
+        //25
+        //outupt should be 6
+        // functiion sumValues(x, y, z){
+        //     return x + y + z;
+        // }
+        // A: sumValues([...1, 2, 3])
+        // B: sumValues(...[1, 2, 3])
+        // C: sumValues(...[1, 2, 3])
+        // D: sumValues9[1.2.3]   // ya thikani array la properly destructure karun gheun sumValues madhe pass karaycha asel tar answer B yeil. mahanun 6 yeil. 
+
+        //26
+        // const name = 'code step by step';   // javascript madhe operation left to right hote ka right to left hote ?
+        // console.log(!typeof name === 'object'); //ya thikani left to right operation hoeel. firt ! nantar === executete hoeel. first false zala ani false la object sobat compare kele tar answer false yeil.  mahanun first ani second answer false yenar. 
+        // console.log(!typeof name === 'string'); // ans => 1) false yeil karan ! cha priority he typeof chya priority peksha jast aahe. mahanun first typeof name hee execute hoil. mahanun tyala string milala tar !string he false yeil. 2) true yeil karan ! cha priority he typeof chya priority peksha jast aahe. mahanun first typeof name hee execute hoil. mahanun tyala string milala tar !string he false yeil. mahanun !false he true yeil.
+
+        //27
+        // const name = "Subscribe";
+        // const age = 29;
+
+        // console.log(isNaN(name));   // ans => kay name he not a number aahe . tar yes aahe mahaunun true yeil.
+        // console.log(isNaN(age));    // ans => 29 he not a number aahe ? hot tar 29 number aahe mahanun false yeil.
+
+        //28
+        // let person = { name: "Anil"};
+        // //waht can modify person object
+        // Object.seal(person); // ya thikani person object la seal kela aahe mahanun tyala name change karaycha asel tar tyala change karu shakto. pan tyala new property add karaycha asel tar tyala add karu shakto nahi. mahanun answer => name change karu shakto pan new property add karu shakto nahi.
+        // person.name = "Sam";    // ya thikani person object la seal kela aahe mahanun tyala name change karaycha asel tar tyala change karu shakto. pan tyala new property add karaycha asel tar tyala add karu shakto nahi. mahanun answer => name change karu shakto pan new property add karu shakto nahi.
+        // console.warn(person);
+
+        //29
+        // let data = [2, 9, 0, 10]
+        // //remove first element from array
+        // // Ans => first element remove karnyasathi shift() method use karaycha aahe.
+        // data.shift()
+        // console.warn(data);
+
+        //30
+        // let data = [2, 9, 0, 10];
+        // //remove last element from array+
+        //     data.pop();
+        // // console.warn(data.pop());   // pop() method use karaycha aahe. mahanun last element remove hoto.
+        // console.warn(data);
+
+        // time 48.20
+
 
 
 
