@@ -176,10 +176,183 @@
         // // console.warn(data.pop());   // pop() method use karaycha aahe. mahanun last element remove hoto.
         // console.warn(data);
 
-        // time 48.20
+        // 31
+        //check any value is odd or even
+        // let a = 11;
+        // console.warn(a%2);  // ya thikani % operator use karaycha aahe. mahanun 10%2 = 0 yeil. mahanun 10 he even number aahe.
 
+        //32
+        // let data={
+        //     name:"Anil"
+        // }
+        // delete data.name;
+        // console.warn(data); // ans => {} yeil karan delete data.name hee object madhe ahe mahanun tyala delete kela jato. mahanun blank object yeil.
 
+        //33
+        // let data = "true";
+        // //convert data to boolean false value
+        // console.warn(!data);   // ans => false yeil karan !data hee true aahe mahanun !true he false yeil.
 
+        //33
+        // let data = "true";
+        //convert data to boolean false value
+        // console.warn(!!data); // ! single tar opposite ani !! double tar opposite cha opposite. mahanun !!data hee true aahe mahanun !!true he true yeil.
+
+        //34
+        //what is the difference between map and foreach function
+        // A. map return new array and foreach not
+
+        //35
+        // let data= ["anil", "peter", "bruce"];
+        // delete data [1]
+        // console.warn(data); // ans => ["anil", empty, "bruce"] yeil karan delete data[1] hee array madhe ahe mahanun tyala delete kela jato. mahanun blank element yeil.
+        
+
+        //36
+        // let data= ["anil", "peter", "bruce"];
+        // delete data [1]
+        // console.warn(data.length);// ans => 3 yeil karan delete data[1] hee array madhe ahe mahanun tyala delete kela jato. mahanun blank element yeil. mahanun length 3 yeil.
+
+        //37
+        //merge two array
+        //  let a = [1, 2, 3];
+        //  let b = [4, 5, 6]; 
+        //  let c = [...a, ...b]; // ya thikani spread operator use karaycha aahe. mahanun a ani b array madhil element merge hoil. mahanun c madhe 1,2,3,4,5,6 yeil.
+        //  console.warn(c) 
+
+        //37
+        //  let a = [1, 2, 3, 4];
+        //  let b = [4, 5, 6]; 
+        //  let c = [...a, ...b]; // a ani b madhe 4 hee value saman asli tari 4 hee value don vela print hoeel. mahanun c madhe 1,2,3,4,4,5,6 yeil.
+        //  console.warn(c) 
+
+        //38
+        //what will be the output
+        // let c = 3 ** 3;
+        // console.warn(c);    // ans => 27 yeil karan ** he power operator aahe. mahanun 3 cha power 3 he 27 yeil.
+        
+        //39
+        //what will be the output
+        // let a = 2;
+        // setTimeout(()=>{
+        //     console.warn(a)
+        // },0)  
+        // a = 100; // yache answer 100 yeil karan js madhe je kahi special function astat te stack memory madhe store astat ani js compilor tyana shevti run karto mahanun adhi 100 show honar.
+
+        //40
+        //what will be the output
+        // let a = 2;  // small a ani capital A madhe difference ahe.
+        // let A = 30; // small a ani capital A madhe difference ahe.
+        // console.warn(A); // ans => 30 yeil karan small a ani capital A madhe difference ahe. mahanun A he 30 yeil.
+
+        //41
+        // let A10 = "Like"; // ya thikani variable name letter aahe mahanun error yenar nahi.
+        // // let 10A = "Subscribe";   // ya thikani variable name madhe number first nahi ahe mahanun error yeil. 
+        // console.warn(A10);   // js variable simple rule
+
+        //42
+        // let a = "like";
+        // let b = 'like';
+        // console.warn(a === b)   // ans => true yeil karan string madhe single quote ani double quote madhe difference nahi ahe. mahanun true yeil.  
+
+        //43
+        // let a = 1;
+        // let c = 2;
+        // console.warn(--c === a) // --c he decreament operator aahe mahanun first c madhe 1 kami kela ani tyala a madhe assign kela. mahanun 1 === 1 yeil. mahanun true yeil.
+
+        //44
+        // let a = 1;
+        // let b = 1;
+        // let c = 2;
+        // console.warn(a === b === --c) // comparision he left to right hote. a == b he true aahe. mahanun true return zala ani ya true la decreament kelyamule je 1 ale aahe tya barobar compare kele jate. mahanjech ture === 1 mahanun answer false yeil. my guess was right.
+
+        //45
+        // what will be the output of indivisial of these three
+        // console.warn(3*3); // ans => 9 yeil karan 3*3 he 9 yeil.
+        // console.warn(3**3); // ans => 27 yeil karan 3**3 he 27 yeil.
+        // console.warn(3***3); // ans => error yeil karan 3***3 he valid nahi. mahanun error yeil.
+
+        //46
+        // console.warn(a)
+        // var a = 10; // answer undefined yeil var he nantar declare kele aahe mahanun undefined yeil. agodar var defined kele aste  tar answer 10 yeil.  
+        
+        //47
+        // console.warn(b);    // b ha variable declare suddhe kelela nahi mahanun not defined yeil. varti nidan nantar declare kelela hota mahanun undefined answer yet hote. not defined ani undefined ya madhe difference aahe.
+
+        //48
+        // console.warn([[[[]]]])  // yacha nested array tayar hoeel. sharvat aatil array madhe 0 element aahe. mahanun 3 array show karel.
+
+        //49
+        // how to find operating system in javascript
+        // console.warn(navigator.platform) // ans => Win32 yeil karan apan windows madhe chalavat aahe.
+
+        //50
+        // let for = 100;  // ya thikani for he reserved keyword aahe mahanun error yeil. mahanun for, else, if, console. etc he variable name use karaycha nahi.
+
+        //51
+        // function fruit(){
+        //     console.log(name); // ya thikani hoisting cha concept apply hoil. mahanun first name cha variable declare kele aahe mahanun undefined yeil. 
+        //     console.log(price); // hoisting rule => pahila variable declare kara kiwa nantar declare kara mala kahi problem nahi. let mahanto mala phaila declare kara nantar use kara ha hoisting cha rule aahe. mahanun error yeil.   
+
+        //     var name = "Apple";
+        //     let price = 20;
+        // }
+        // fruit();
+
+        //52
+        // for(var i = 0; i < 3; i++){ // ya thikani var ha golbal variable aahe. mahanun i cha value 3 tak jato. mahanun 3,3,3 yeil.
+        //     setTimeout(() => console.log(i),i); // thies is the closure effect in javascript.
+        // }
+
+        //53
+        // for(let i = 0; i < 3; i++){
+        //     setTimeout(() => console.log(i),i); // block level scope aslymule sepeately i execute hote.
+        // } // ans => 0, 1, 2 yeil karan let cha scope he block level la aahe. mahanun i cha value 0,1,2 yeil.
+
+        //54
+        // console.warn(+true)// kontyaee data type chya agodat + sign dilyamule tyacha number to number madhe covert hoto. mahanun 1 yeil.
+        // console.warn(typeof +true)
+
+        //55
+        // console.warn(!"yogesh");  // value ! mule false hoeel. mahanun false yeil.
+        // console.warn(typeof("yogesh"));// type of keyword ani functiion sarkha pan use houe skhakto. ya madhe ! cha kahihi sambadh nahi.
+
+        //56
+        // let data = "size";
+        // const bird = {
+        //     size : "small",
+        // }
+        // console.warn(bird[data]); // jeva ek varibale use karayache aste object chaya sobat teve square bracket use karave lagte.
+        // console.warn(bird["size"]); // jeva ek string pass keli tari suddha chalel
+        // console.warn(bird.size); // bird chi swatachi property aahe mahanun answer small yeil.
+        // console.warn(bird.data); // pan data he directly . operator sobat use kela tar to nahi chalnar.
+
+        //57
+        // let c = { name: "peter"};
+        // let d;
+
+        // d = c;
+        // c.name = "anil";
+        // console.log(d.name);    // ans => anil yeil karan c ani d he same memory location madhe ahe. mahanun c madhe name change kela tar d madhe pan name change hoil. mahanun anil yeil.
+
+        //58
+        // var x;
+        // var x = 10;
+        // console.log(x); // ans => 10 yeil karan var cha scope he global aahe. mahanun x cha value 10 yeil.
+
+        //59
+        // var x;
+        // let x = 10
+        // console.log(x); // //ans => by youtuber answer is => x la agodarach declare kele aahe. mahanun parat declare karata yet nahi. ans => error yeil karan let cha scope he block level aahe. mahanun x cha value 10 yeil.
+
+        //60
+        // let a = 3; // 3 he number aahe
+        // let b = new Number(3); // 3 he object aahe
+
+        // console.log(a == b); // mahanun number == number match hote mahanun => true yenar
+        // console.log(a === b); // mahanun number === object match nahi hote mahanun => false yenar
+
+        //61
 
 
     </script>
