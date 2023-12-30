@@ -418,6 +418,87 @@
         // const obj = {a: "one", b:"two", a: "repeat"}
         // console.log(obj); // ans = {a: "repeat", b: "two"}
 
+        //71
+        // for (let i=1; i < 5; i++){
+        //     if( i === 3) continue;
+        //     console.log(i);
+        // }   // ans => 1, 2, 4
+
+        //72
+        // const foo = () => console.log('First');
+        // const bar = () => setTimeout(() => console.log('Second'));
+        // const baz = () => console.log('Third');
+
+        // bar();
+        // baz();
+        // foo();  // apan kasha paddatine call karto ya varti output depend karto. mahanun third, first, second,  yeil.
+
+        //73
+        // kontya sequence madhe print hoeel
+//         <div>
+//     <div onclick="console.log('first div')">
+//         <div onclick="console.log('second div')">
+//             <button onclick="console.log('button')">
+//                 Click!
+//             </button>
+//         </div>
+//     </div>
+// </div>
+
+// ans => button, seoncd div, first div
+
+    //74
+    // const person = {name: "anil"};
+
+    // function sayHi(age){
+    //     return `${this.name} is ${age}`; // learn .call and .bind method
+    // }
+    // console.log(sayHi.call(person, 21)); // .call che yache kam function call karayache aahe
+    // console.log(sayHi.bind(person, 21)); // .bind che kam value bind karayache aahe.
+
+    //75
+    // function sayHi(){
+    //     return (() => 0) (); // 0 he sayHi functiion madhe return hoeel mahanun sayHi yacha typeof he number asel.
+    // }
+    // console.log(typeof sayHi()) 
+
+    //76
+    // function sayHi(){
+    //     return () => 0; // ya thikani function la call kele nahi mahanun return type ha function yeil. ans => function
+    // }
+    // console.log(typeof sayHi());
+    // console.log(typeof sayHi()());
+
+    //77
+    // console.log( typeof typeof 1) // last la je typeof 1 aahe tyache answer number aahe ani number ha alphaet number asa ahe mahanun te first typeof che answer he string yeil.
+
+    //78
+    // const numbers = [1, 2, 3];
+    // numbers[6] = 11; // ya thikani 6th index madhe 11 assign kela mahanun 4th, 5th index madhe empty x 3 yeil.
+    // console.log(numbers);
+
+    //79
+    // array chaya aat madhe jar toch array takla tar kay output yeil.
+    // const numbers = [1, 2, 3];
+    // numbers[9] = numbers;
+    // console.log(numbers); // 9th position var partek veli ek numbers array takla jail ani ha infinite loop tayar hoeel.
+
+    //80
+    // Everything in javascript is either a....
+    // A. primitive or object
+    // B. function or object
+    // C. trick question, there are only objects
+    // D. number or object
+    // ans => A // answer is simple but study the primityve types and object in javascript.
+
+    //81
+    //Time : 1.36.38
+
+
+
+
+
+
         
 
         
