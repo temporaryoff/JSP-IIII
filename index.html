@@ -492,7 +492,61 @@
     // ans => A // answer is simple but study the primityve types and object in javascript.
 
     //81
-    //Time : 1.36.38
+    // console.log(!!null); // null hee false aahe mahanun !!null he false yeil.
+    // console.log(!!"");  // empty string hee false aahe mahanun !!"" he false yeil.
+    // console.log(!!1); // false, false, true yeil karan null, empty string, 1 hee false aahe mahanun !!null he false yeil. !!"" he false yeil. !!1 he true yeil.
+    
+    //82
+    // console.warn(setInterval(() => console.log('Hi'), 1000)); // jeva apan setInterval() call karto teva to ek uniquie id deto. ani jeva apnas tyala band kayarache aste teva tyala apan id nusar band karu shakto.
+    // console.warn(setInterval(() => console.log('Hi'), 1000));
+    // console.warn(setInterval(() => console.log('Hi'), 1000));
+
+    //83
+    // console.log([..."Anil"]);   // ya thikani spread operator use kele aahe. mahanun Anil he array madhe convert hoeel. mahanun ["A", "n", "i", "l"] yeil.
+
+    //84
+    // const firstPromise = new Promise((res, rej) => setTimeout(res, 500, 'one'));
+
+    // const secondPromise = new Promise((res, rej) => setTimeout(res, 100, 'two'));
+
+    // Promise.race([firstPromise, secondPromise]).then(res => console.log(res)); // ya promise madhe .race use kelya mule kay hoeel tar jo pahila resolve to first disel. karan ya thikani Two cha setTimeout ha kami aahe mahanun to first resolve hoeel. mahanun Two asnwer yeil.
+
+    //85
+    // let person = { name: 'peter'}; // jeva pan apan eka object la eka dusrya array madhe constant madhe store karto teva object la apna blank karto pan  array la nahi karan to const mahde aahe. mahanunun  object of array madhe peter value still asel.
+    // const numbers = [person];
+    // person = null;
+    // console.log(numbers);
+
+    //86
+    // const person = {
+    //     name: "batman",
+    //     age: 21,
+    // }
+
+    // for(const item in person){
+    //     console.log(item);
+    // }   // jaya veli apan object la for in loop use karto teva object madhil key print hote. mahanun name, age yeil.    
+
+    //87
+    // let data = 3 + 4 + '5';
+    // console.log(typeof data); // ans => string yeil karan 3 + 4 he 7 yeil ani 7 + '5' he 75 yeil. mahanun string yeil.
+
+    //88
+    // console.log(typeof 3 + 4 + '5'); // ans => number45 mahanjech operation he left to right chalte. 3 te number aahe 4+ '5' he 45 yeil mahan anser number45 yeil.
+
+    //89
+    // console.log(typeof (3 + 4 + +'5')); // first bracket madhil code run hoeel jar double ++ dile eka string chaya agodar tar te string number madhe convert hoeel mahanun bracket madhil calculation he 12 yeil. ani tyacha typeof ha number yeiil.
+
+    //90
+    // console.log([] == []) // ans => false yeil karan ya thikani array madhil memory location compare hoeel. mahanun donhi array madhil memory location same nahi mahanun false yeil.
+    
+
+
+
+
+    
+    
+
 
 
 
