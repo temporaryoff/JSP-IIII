@@ -538,8 +538,82 @@
     // console.log(typeof (3 + 4 + +'5')); // first bracket madhil code run hoeel jar double ++ dile eka string chaya agodar tar te string number madhe convert hoeel mahanun bracket madhil calculation he 12 yeil. ani tyacha typeof ha number yeiil.
 
     //90
-    console.log([] == []) // ans => false yeil karan ya thikani array madhil memory location compare hoeel. mahanun donhi array madhil memory location same nahi mahanun false yeil.
-    
+    // console.log([] == []) // ans => false yeil karan ya thikani array madhil memory location compare hoeel. mahanun donhi array madhil memory location same nahi mahanun false yeil.
+
+    //91
+    // let data = [1,2,3].map(num => {
+    //     if(typeof num === 'number') return; // 1.2,3 he number aahe ani === 'number' pan match hote pan typeof madhe return kahihi hot nahi mahanun undefined yeil.
+    //     return num * 2;
+    // })
+    // console.warn(data);
+
+    //92
+    // function getInfo(member){
+    //     member.name = "Anil";
+    // }
+    // const person = {name: "Sarah"};
+
+    // getInfo(person); //jeva apn javascript madhe object la pass karto as a prameter teva to call by refrence kam karto. mahanjech const person = { name: 'Ssarah'} chi memory location function madhe geli ani thithe memory location la name change zale.
+    // console.log(person);
+
+    //93
+    // function Car(){
+    //     this.make = "TATA";
+    //     return {make: "KIA"};   // jaya veli apn return karto tya veli varil make property la to override karto. ani jar return nasel tar TATA yeil.
+    // }
+    // const myCar = new Car();
+    // console.log(myCar.make);
+
+    //94
+    // (()=>{
+    //     let x = (y = 10);  // let cha scope ha block level aahe mahanun ani x apan baher kutehi declare kele nahi. mahanun undefined answer yeil.
+    // })();
+
+    // console.log(typeof x);
+
+    //95
+    // (() =>{
+    //     let x = y = 10;
+    //     // let x;
+    // })();
+    // console.log(typeof y); //  answer will be number because y is global variable. not x
+
+    //96
+    // (() =>{
+    //     let x = 10;
+    // })();
+
+    // (() =>{
+    //     let x =10;
+    // })();
+
+    // console.log(typeof x); // answer will be undefined because x is block level scope.
+
+    //97
+    // (() =>{
+    //     let x = y = 10; // ya thikani y he var global variale taryar hote ani nantar y chi calue change zali mahanun answer 20 yeil. shevti var = y la 20 value assign zali mahanun answer 20 yeil.
+    // })();
+
+    // (() =>{
+    //     let x = y = 20;
+    // })();
+
+    // console.log(y);
+
+    //98
+    // let x = 100;
+    // (() =>{
+    //     var x = 20; // baher ek seperate x define new value assign zalie aahe mahanun baheril x = 100 print hoil.
+    // })();
+
+    // console.log(x);
+
+    //99
+    // console.warn(!true - true);  // true chi value aste 1 ani tyala not kele tar to hoto 0 ani mahanun 0 -1 = -1 mahanun answer -1 yeil.
+
+
+    //100
+    console.warn(true + + "10"); // string chaya agodar  double ++ sing dilya mule string 10 he number 10 hoil. mahanun true chi value 1 aahe mahanun 1 _+ 10  = 11. mahanun answer 11 yeil.
 
 
 
